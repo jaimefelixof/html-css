@@ -15,6 +15,10 @@ header {
     width: 100%;
     height: 300px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 
 h1#cordel {    
@@ -23,27 +27,36 @@ h1#cordel {
     color: white;
     font-family: "Passion One", serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal;    
 }
 
-p#titulo {
+header p {
+    margin-top: 10px;
     text-align: center;
     color: white;
+    font-size: 16px;
+     
 }
 
-a {
+header p a {
     color: white;
     text-decoration: none;
 }
 
+header p a:hover {
+    text-decoration: underline;
+}
+
 main {
     width: 800px;
+    padding: 10px;
     margin: auto;  
 }
 
 main p {
-    font-size: 2em;
-    padding: 10px;
+    font-size: 30px;
+    line-height: 2;
+    word-wrap: break-word;
 }
 
 footer {   
