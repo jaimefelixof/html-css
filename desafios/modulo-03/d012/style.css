@@ -17,8 +17,7 @@ header {
     background-color: black;
 }
 
-h1#cordel {
-    
+h1#cordel {    
     text-align: center;
     font-size: 90px;
     color: white;
@@ -39,12 +38,12 @@ a {
 
 main {
     width: 800px;
-    margin: auto;
-    
+    margin: auto;  
 }
 
 main p {
     font-size: 2em;
+    padding: 10px;
 }
 
 footer {   
@@ -56,4 +55,5 @@ p#rodape {
     text-align: center;
     color: white;
     padding: 5px;
+    font-size: 0.9em;
 }
