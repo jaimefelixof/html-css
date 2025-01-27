@@ -18,7 +18,7 @@
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: lightblue;
+            background-color: rgba(194, 195, 196, 0.774);
         }
 
         td, th {
@@ -37,6 +37,14 @@
 
         .cidade {
             text-align: left;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
         }
     </style>
 </head>
@@ -58,8 +66,8 @@
         <caption>Populaçao das Unidade Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -126,7 +134,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de Habitante</td>
+                <th scope="row">Total de Habitante</th>
                 <td><strong>21.168.791</strong></td>
             </tr>
         </tfoot>
