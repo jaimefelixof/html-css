@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            width: 400px;
+            height: 400px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: middle; /*Alinhamento vertical*/
+        }
+
+        .linha {
+            background-color: #f2f2f2;
+        }
+
+        .esquerdo {
+            text-align: left;
+        }
+
+        .direita {
+            text-align: right;
+        }
+
+        .top {
+            vertical-align: top;
+        }
+
+        .bottom {
+            vertical-align: bottom;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- 
+        HIERARQUIA DE TABELA (simples)
+        TABLE = tabela
+            TABLE ROW = linha da tabela
+                TABLE HEADER = cabeçalho da tabela
+                TABLE DATA = célula da tabela
+    -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td class="top">B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td class="esquerdo">A2</td>
+            <td>B2</td>
+            <td class="direita">C2</td>
+        </tr>
+        <tr>
+            <td class="esquerdo">A3</td>
+            <td>B3</td>
+            <td class="direita">C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td class="bottom">B4</td>
+            <td>C4</td>
+        </tr>
+
+    </table>
+</body>
+</html>
