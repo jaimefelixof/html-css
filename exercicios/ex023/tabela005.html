@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Notas</title>
+    <title>Execícios de Tabela</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,29 +42,38 @@
         .numero {
             text-align: center;
         }
+        col.cgupo {
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
+    <h1>Exercícios de Tabela</h1>
     <table>
+        <colgroup>
+            <col class="cgrupo" span="2">            
+        </colgroup>
+
+        <caption>Notas dos Alunos</caption>
         <thead>
             <tr>
-                <th rowspan="2" scope="rowgroup">Área</th>
-                <th rowspan="2" scope="rowgroup">Disciplina</th>
-                <th colspan="2" scope="colgroup">Notas</th>
-                <th rowspan="2" scope="rowgroup">Média</th>    
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="col">Notas</th>
+                <th rowspan="2" scope="col">Média</th>    
             </tr>
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th rowspan="4" class="categoria">Exatas</th>
                 <td>Matemática</td>
-                <td class="numero">0.0</td>
-                <td class="numero">0.0</td>
-                <td class="numero">0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
             <tr>
                 <td>Física</td>
